@@ -13,64 +13,70 @@
     }
   },
   "navigation": {
-    "tabs": [
+    "versions": [
       {
-        "tab": "Documentation",
-        "icon": "book",
-        "groups": [
+        "version": "v0.0.1",
+        "icon": "alert-triangle-icon",
+        "tabs": [
           {
-            "group": "Start Here",
-            "icon": "rocket",
-            "pages": [
+            "tab": "Documentation",
+            "icon": "book",
+            "groups": [
               {
-                "title": "Introduction",
-                "path": "introduction",
-                "icon": "home"
+                "group": "Start Here",
+                "icon": "rocket",
+                "pages": [
+                  {
+                    "title": "Introduction",
+                    "path": "introduction",
+                    "icon": "home"
+                  }
+                ]
+              },
+              {
+                "group": "Scanner",
+                "pages": [
+                  {
+                    "title": "Setup",
+                    "path": "scanner/setup",
+                    "icon": "lucide-columns-settings"
+                  }
+                ],
+                "icon": "radar-icon"
               }
             ]
           },
           {
-            "group": "Scanner",
-            "pages": [
+            "tab": "API Reference",
+            "icon": "code",
+            "groups": [
               {
-                "title": "Setup",
-                "path": "scanner/setup",
-                "icon": "lucide-columns-settings"
-              }
-            ],
-            "icon": "radar-icon"
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "icon": "code",
-        "groups": [
-          {
-            "group": "Overview",
-            "icon": "file-text",
-            "pages": [
+                "group": "Overview",
+                "icon": "file-text",
+                "pages": [
+                  {
+                    "title": "Authentication",
+                    "path": "authentication",
+                    "icon": "lock"
+                  }
+                ]
+              },
               {
-                "title": "Authentication",
-                "path": "authentication",
-                "icon": "lock"
+                "group": "Endpoints",
+                "openapi": "openapi.yaml"
               }
             ]
           },
           {
-            "group": "Endpoints",
-            "openapi": "openapi.yaml"
-          }
-        ]
-      },
-      {
-        "tab": "Changelog",
-        "icon": "clock",
-        "pages": [
-          {
-            "title": "Changelog",
-            "path": "changelog",
-            "icon": "history"
+            "tab": "Changelog",
+            "icon": "clock",
+            "pages": [
+              {
+                "title": "Changelog",
+                "path": "changelog",
+                "icon": "history"
+              }
+            ]
           }
         ]
       }
