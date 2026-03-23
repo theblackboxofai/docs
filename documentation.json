@@ -16,7 +16,6 @@
     "versions": [
       {
         "version": "v0.0.1",
-        "icon": "alert-triangle-icon",
         "tabs": [
           {
             "tab": "Documentation",
