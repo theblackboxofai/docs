@@ -34,7 +34,7 @@
             "pages": [
               {
                 "title": "Setup",
-                "path": "setup",
+                "path": "scanner/setup",
                 "icon": "lucide-columns-settings"
               }
             ],
