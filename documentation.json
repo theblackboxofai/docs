@@ -28,6 +28,16 @@
                 "icon": "home"
               }
             ]
+          },
+          {
+            "group": "Scanner",
+            "pages": [
+              {
+                "title": "The Scanner",
+                "path": "the-scanner"
+              }
+            ],
+            "icon": "radar-icon"
           }
         ]
       },
