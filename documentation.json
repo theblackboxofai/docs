@@ -26,16 +26,6 @@
                 "title": "Introduction",
                 "path": "introduction",
                 "icon": "home"
-              },
-              {
-                "title": "Quickstart",
-                "path": "quickstart",
-                "icon": "zap"
-              },
-              {
-                "title": "Components",
-                "path": "components",
-                "icon": "code"
               }
             ]
           },
@@ -155,7 +145,7 @@
       }
     ]
   },
-  "template": "atlas",
+  "template": "classic",
   "logo-dark": "https://blob-cdn.documentation.ai/org-81c3e2e4-8cc2-4438-9140-7bd7ccd2a649/doc-56160a24-ce7e-4edc-85b8-315fa6aefaf8/1774224894107-142q3gfl69wp-logo.png?q=85&fm=auto&auto=compress%2Cformat",
   "logo-light": "https://blob-cdn.documentation.ai/org-81c3e2e4-8cc2-4438-9140-7bd7ccd2a649/doc-56160a24-ce7e-4edc-85b8-315fa6aefaf8/1774224894107-142q3gfl69wp-logo.png?q=85&fm=auto&auto=compress%2Cformat",
   "favicon": "https://blob-cdn.documentation.ai/org-81c3e2e4-8cc2-4438-9140-7bd7ccd2a649/doc-56160a24-ce7e-4edc-85b8-315fa6aefaf8/1774224894107-142q3gfl69wp-logo.png?q=85&fm=auto&auto=compress%2Cformat",
