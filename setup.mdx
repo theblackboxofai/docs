@@ -2,4 +2,44 @@
 title: Setting up the scanner
 description: How to run the scanner container on your own hardware using your own database.
 ---
-Todo!
+The scanner is a Docker container that runs `masscan` every 24 hours against IP ranges associated with major hosting providers, including Linode, DigitalOcean, and Hetzner.
+
+To get started, create a \```docker-compose.yml` file in the `~blackbox-scanner/`directory. ``
+
+```yaml
+services:
+  scanner:
+    build:
+      context: .
+    restart: unless-stopped
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    environment:
+      DATABASE_URL: ${DATABASE_URL}
+      DB_CONNECT_RETRY_SECONDS: 30
+      RANGES_FILE: /app/ranges.txt
+      MASSCAN_PORT: 11434
+      MASSCAN_RATE: 1000
+      MASSCAN_WAIT_SECONDS: 10
+      OLLAMA_FETCH_WORKERS: 32
+      REQUEST_TIMEOUT_SECONDS: 15
+      SCAN_INTERVAL_SECONDS: 86400
+      HTTP_USER_AGENT: Blackbox/1.0
+      LOG_LEVEL: INFO
+    volumes:
+      - ./ranges.txt:/app/ranges.txt:ro
+```
+
+Then run the following command:
+
+
+
+```bash
+# Start the scanner in detached (background) mode
+docker compose up -d
+
+# Start the scanner in the foreground (attached)
+docker compose up
+```
+
