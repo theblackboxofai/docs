@@ -33,8 +33,9 @@
             "group": "Scanner",
             "pages": [
               {
-                "title": "The Scanner",
-                "path": "the-scanner"
+                "title": "Setup",
+                "path": "setup",
+                "icon": "lucide-columns-settings"
               }
             ],
             "icon": "radar-icon"
